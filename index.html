@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html leng="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable="no">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>document</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <style> 
+        </style>
+    </head>
+ 
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+    <body>
+        <!-- ▼ 메뉴바 -->
+        <!-- 메뉴바를 두 부분으로 나누고 마우스를 올릴곳과 나타날 곳을 만들고 이 둘을 묶을 div를 만든다. -->
+        <div id="menu">
+            <!-- 마우스가 올라가는 부분 -->
+            <div id="slide"><ul id="nav" style="padding-top:10px">
+                <div class="btn_slide">
+                    <button class="btn rec">추천</button>
+                    <button class="btn hot">인기</button>
+                    <button class="btn all">전체</button>
+                    <button class="btn com">완결</button>
+                    <button class="btn loc">보관함</button>
+                </div>
+            </div>
+            <!-- 처음엔 안보였다 나중에 보이는 부분 -->
+            <div id="panel">
+                <div class="btn_panel"></div>
+                    <button class="btn mon">월</button>
+                    <button class="btn tue">화</button>
+                    <button class="btn wed">수</button>
+                    <button class="btn thu">목</button>
+                    <button class="btn fri">금</button>
+                    <button class="btn sat">토</button>
+                    <button class="btn sun">일</button>
+            </div>
+        </div>
+        <!-- ▲ 메뉴바 -->
+
+        <!-- ▼ 레이아웃1 -->
+        <div class="layout_1" id="rec">
+
+            <div class="leftspace">
+
+                <div class="recommend">
+                    <img src="img/recommend.png" style="width : 12vw">
+                </div>
+                
+                <!-- <div class="base">
+
+                    <div class="title1" style="font-family: KakaoRegular; font-size: 90pt; color: rgb(43, 43, 43); text-shadow: 10px 10px rgb(230, 230, 230); transform : rotate(0.04deg); ">
+                        <br>
+                        새로운 경험, <br>
+                        카카오 웹툰
+                    </div>
+                </div> -->
+
+                <div class="misaeng">
+
+                <div class="title1">
+                    <img src="img/title1.png" style="width : 15vw">
+                </div>
+
+                <div class="text1">
+                    <br>작가 윤태호 / 장르 드라마
+
+                </div>
+
+                <div class="text2">
+                    <br>어려서 바둑에 소질과 흥미를 보여 바둑에 인생을 걸었지만, <br>
+                    결국 입단하지 못하고 바둑을 그만둔 '장그래'. <br>
+                    제대 후 후원자의 소개로 대기업에 인턴으로 취직한 장그래가 <br>
+                    회사에서 살아남기 위해 한 수 한 수 고민해 나가는 과정을 <br>
+                    실감나게 그려내고 있다.
+                </div>
+
+                <div class="alert1">
+                    <img src="img/alert.png" style="width : 4vw">
+                </div>
+
+                <div class="text3">
+                    성인인증이 필요한 컨텐츠입니다.
+                </div>
+
+                </div>
+
+                <!-- <div class="behind">
+
+                    <div class="title1">
+                        <img src="img/title1.png" style="width : 15vw">
+                    </div>
+    
+                    <div class="text1">
+                        <br>작가 윤태호 / 장르 드라마
+    
+                    </div>
+    
+                    <div class="text2">
+                        <br>어려서 바둑에 소질과 흥미를 보여 바둑에 인생을 걸었지만, <br>
+                        결국 입단하지 못하고 바둑을 그만둔 '장그래'. <br>
+                        제대 후 후원자의 소개로 대기업에 인턴으로 취직한 장그래가 <br>
+                        회사에서 살아남기 위해 한 수 한 수 고민해 나가는 과정을 <br>
+                        실감나게 그려내고 있다.
+                    </div>
+    
+                    <div class="alert1">
+                        <img src="img/alert.png" style="width : 4vw">
+                    </div>
+    
+                    <div class="text3">
+                        성인인증이 필요한 컨텐츠입니다.
+                    </div>
+    
+                </div> -->
+
+
+            </div>
+
+            <div class="rightspace">
+
+                  <div class="tricon1">
+                    <div class="triangle1">
+                      <div class="triangle1_bg"></div>	
+                    </div>
+                  </div>
+
+                  <div class="tricon2">
+                    <div class="triangle2">
+                      <div class="triangle2_bg"></div>
+                    </div>
+                    </div>
+
+
+                <div class="bg1"></div>
+
+            </div>
+        </div>
+        <!-- ▲ 레이아웃1 -->
+
+
+
+        <!-- ▼ 레이아웃2 -->
+        <div class="layout_2" id="hot">
+            <div class="popular">
+                <img src="img/hot.png" style="width : 12vw">
+            </div>
+
+
+            <div id="thumbslide">
+                <input type="radio" name="pos" id="pos1" checked>
+                <input type="radio" name="pos" id="pos2">
+                <input type="radio" name="pos" id="pos3">
+                <input type="radio" name="pos" id="pos4">
+                <input type="radio" name="pos" id="pos5">
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <p class="pos">
+                  <label class="thumb1" for="pos1"></label>
+                  <label class="thumb2" for="pos2"></label>
+                  <label class="thumb3" for="pos3"></label>
+                  <label class="thumb4" for="pos4"></label>
+                  <label class="thumb5" for="pos5"></label>
+                </p>
+
+            </div>
+<!-- 레이아웃2 끝 -->
+
+<!-- 레이아웃3 시작 -->
+            <div class="layout_3" id="all">
+                <div class="works">
+                    <p class="monday">MON</p>
+                    <p class="monworks">작품 목록</p>
+                </div>
+
+                <div id="diamond1">
+                    <img src="img/dia1.png" type="button" class="diathumb1">
+                </div>
+                <div id="diamond2">
+                    <img src="img/dia2.png" type="button" class="diathumb2">
+                </div>
+                <div id="diamond3">
+                    <img src="img/dia3.png" type="button" class="diathumb3">
+                </div>
+                <div id="diamond4">
+                    <img src="img/dia4.png" type="button" class="diathumb4">
+                </div>
+                <div id="diamond5">
+                    <img src="img/dia5.png" type="button" class="diathumb5">
+                </div>
+
+                <div id="diamond6">
+                    <img src="img/dia6.png" type="button" class="diathumb6">
+                </div>
+                <div id="diamond7">
+                    <img src="img/dia7.png" type="button" class="diathumb7">
+                </div>
+                <div id="diamond8">
+                    <img src="img/dia8.png" type="button" class="diathumb8">
+                </div>
+                <div id="diamond9">
+                    <img src="img/dia9.png" type="button" class="diathumb9">
+                </div>
+                <!--
+                <div id="diamond10">
+                    <img src="img/alert.png" type="button" class="diathumb10">
+                </div> 
+                  -->
+
+
+                </div>
+
+                <div class="layout_4" id="com">
+
+                    <div class="leftspace2">
+
+                        <img src="img/completed.png" style="width: 300px; padding-left: 4vw;">
+
+                        <div class="title1" style="font-size: 100pt; font-family: 이순신Bold;">
+                            브레이커 2
+                        </div>
+        
+                        <div class="text1">
+                            <br>작가 전국진, 박진환 / 장르 액션, 무협
+        
+                        </div>
+        
+                        <div class="text2">
+                            <br><br>교내 약골 이시운이 우연히 자신의 학교에 선생으로 잠입한<br>
+                            무림고수 구문룡 한천우를 만난다.
+                            대한민국 최고의 도시무협 액션, 그 두 번째 신화가 펼쳐진다!
+                        </div>
+    
+                    </div>
+
+                    <div class="rightspace2">
+                        <div class="slider">
+                            <div class="slides">
+                              <div id="slides-1"><img class="simg" src="./img/completed1.png" alt=""></div>
+                              <div id="slides-2"><img class="simg" src="./img/completed2.png" alt=""></div>
+                              <div id="slides-3"><img class="simg" src="./img/completed3.png" alt=""></div>
+                            </div>
+                          
+                            <a href="#slides-1"></a>
+                            <a href="#slides-2"></a>
+                            <a href="#slides-3"></a>
+                          </div>
+                    </div>
+                </div>
+
+                <button class="arrow-up">
+                    <span class="material-icons" style="transform: rotate(45deg); color: rgb(150, 67, 0);">
+                        arrow_upward
+                    </span>
+                    </span>
+                </button>
+
+            
+        <!-- 제이쿼리 -->
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </body>
+</html>
